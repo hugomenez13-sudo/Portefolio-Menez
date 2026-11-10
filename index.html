@@ -1,62 +1,157 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Hugo Menez</title>
+    <title>Accueil | Hugo Menez</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 100px 20px;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 8%;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu a {
+            margin-left: 20px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 25px;
         }
 
         .carte {
             background-color: white;
-            padding: 40px;
-            border-radius: 15px;
-            max-width: 500px;
-            margin: auto;
+            padding: 50px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #eee;
         }
 
         h1 {
-            color: #222;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #666;
+            font-weight: normal;
+            margin-bottom: 25px;
         }
 
         p {
             color: #666;
+            line-height: 1.8;
+            margin-bottom: 25px;
         }
 
         .bouton {
             display: inline-block;
             background-color: #222;
             color: white;
-            padding: 12px 25px;
             text-decoration: none;
-            border-radius: 6px;
+            padding: 12px 25px;
+            border-radius: 5px;
+        }
+
+        .bouton:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .carte {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .menu a {
+                margin-left: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="carte">
-        <li><a href="projets.html">Mes projets</a></li>
-        <h1>Bonjour, je suis Hugo Menez !</h1>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Hugo.</a>
 
-        <h2>Étudiant en BTS SIO SLAM</h2>
+            <div class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="projets.html">Mes projets</a>
+            </div>
+        </nav>
+    </header>
 
-        <p>
-            Bienvenue sur mon premier portfolio.
-        </p>
+    <main>
+        <section class="carte">
+            <h1>Bonjour, je suis Hugo Menez !</h1>
 
-        <a href="hugomenez13@email.com" class="bouton">
-            Me contacter
-        </a>
-    </div>
+            <h2>Étudiant en BTS SIO SLAM</h2>
+
+            <p>
+                Bienvenue sur mon portfolio.
+                Je suis étudiant en BTS Services Informatiques
+                aux Organisations, spécialité Solutions Logicielles
+                et Applications Métiers.
+            </p>
+
+            <p>
+                Ce site présente mon parcours ainsi que les projets
+                réalisés durant mes deux années de formation.
+            </p>
+
+            <a href="projets.html" class="bouton">Découvrir mes projets</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Hugo Menez - Portfolio BTS SIO</p>
+    </footer>
 
 </body>
 </html>
+```

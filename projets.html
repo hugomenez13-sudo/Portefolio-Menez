@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets | Hugo Menez</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #222;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 8%;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .retour {
+            color: #666;
+        }
+
+        .titre {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: white;
+        }
+
+        .titre h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .titre p {
+            color: #777;
+        }
+
+        .contenu {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 25px;
+        }
+
+        .projet {
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+
+        .projet h2 {
+            margin-bottom: 20px;
+        }
+
+        .projet p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .projet ul {
+            padding-left: 25px;
+            color: #666;
+            line-height: 2;
+        }
+
+        .etiquette {
+            display: inline-block;
+            background-color: #eee;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin: 5px 5px 5px 0;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .titre h1 {
+                font-size: 30px;
+            }
+
+            .projet {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Hugo.</a>
+            <a href="index.html" class="retour">← Retour à l'accueil</a>
+        </nav>
+    </header>
+
+    <section class="titre">
+        <h1>Mes projets</h1>
+        <p>Découvrez les projets réalisés durant ma première année de BTS SIO SLAM.</p>
+    </section>
+
+    <main class="contenu">
+
+        <section class="projet">
+            <h2>Projet 1 : Site de gestion d'une bibliothèque</h2>
+
+            <p>
+                Durant ma première année de BTS SIO, j'ai réalisé
+                un site web permettant de gérer une bibliothèque.
+                Le site permet de consulter les livres disponibles
+                et de suivre les emprunts.
+            </p>
+
+            <h3>Objectifs du projet</h3>
+
+            <p>
+                L'objectif était de créer une application simple
+                pour faciliter la gestion des livres et des emprunts
+                au sein d'une bibliothèque.
+            </p>
+
+            <h3>Fonctionnalités principales</h3>
+
+            <ul>
+                <li>Afficher la liste des livres.</li>
+                <li>Consulter les informations des livres.</li>
+                <li>Gérer les emprunts de livres.</li>
+                <li>Suivre les livres empruntés et disponibles.</li>
+            </ul>
+
+            <h3>Technologies utilisées</h3>
+
+            <div>
+                <span class="etiquette">HTML</span>
+                <span class="etiquette">CSS</span>
+            </div>
+
+            <h3>Compétences développées</h3>
+
+            <p>
+                Ce projet m'a permis de progresser dans la création
+                de pages web, l'organisation du code et la conception
+                d'un site répondant à un besoin précis.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Hugo Menez - Portfolio BTS SIO</p>
+    </footer>
+
+</body>
+</html>
